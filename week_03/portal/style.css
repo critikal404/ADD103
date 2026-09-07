@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    background-image: url('/week_03/images/background.jpg');
+    background-image: url('../../week_03/images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
