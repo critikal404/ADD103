@@ -1,0 +1,32 @@
+body {
+    background-color: white;
+    font-family: Georgia;
+    font-size: 30px;
+    color: black;
+
+}
+/*calendar table defined*/
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid #000000;
+    width: 100%;
+    background-color: greenyellow;
+}
+/*table head and table data defined*/
+th, td {
+    border-collapse: collapse;
+    border: 2px solid #000000;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: auto;
+    text-align: right;
+}
+/* class selector defining the empty space at the beginning of the month*/
+.empty-day {
+    background-color: red;
+    color: black;
+    font-style: italic;
+    text-align: center;
+}

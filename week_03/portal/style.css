@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    background-image: url('/week_03/images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    
+}
+
+.card { /* floating card fixed to page so it scrolls with the images */
+    background-color: rgba(63, 86, 214, 0.445);
+    border-radius: 5px;
+    position: fixed;
+    top: 500px;
+    left: 1150px;
+    bottom: auto;
+    right: auto;
+    margin: auto;
+}
+
+.banner {
+    background-color: rgba(134, 147, 219, 0.247);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+/*image edits*/
+img {
+    border-radius: 7px;
+    max-width: 640px;
+}
+
+.gallerycard { /* positioning of the images so they are center to the page */
+    position: relative;
+    top: -10px;
+    left: 300px;
+    right: auto;
+    margin: 100px;
+}
+
+/* element attributes specified*/
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-family: courier;
+    font-size: 15px;
+    text-align: right;
+}
+
+footer {
+    background-color: rgba(134, 147, 219, 0.75);
+
+}

@@ -1,0 +1,25 @@
+body { /* main page layout elements defined */
+    background-color: white;
+    color: black;
+}
+.profile-pic { /* class selector for chosen avatar image properties */
+    border: 3px inset #89db70;
+    height: auto;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    max-width: 300px;
+    height: auto;
+} 
+
+.btn-link { /* class selector for links in button format */
+    background-color: #d8d671;
+    color: rgb(25, 58, 36);
+    padding: 20px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+li { /* list formatting changed to allow for button sizing */
+    padding: 50px 10px 15px 35px;
+    margin: 10px 15px 15px 10px;
+}
