@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 100px;
+    left: 300px;
+    right: auto;
+    bottom: auto;
+}
+
+ul.a {
+    list-style-type: upper-roman;
+}
+
+ul.b {
+    list-style:circle;
+}
+
+ol.a {
+    list-style: lower-latin;
+}
+
+h1 {
+    color: blueviolet;
+    font-family: Impact;
+    font-size: 40px;
+    margin: 10px 15px -10px 0px;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+footer {
+    margin-top: 30%;
+}
