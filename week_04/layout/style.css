@@ -1,37 +1,50 @@
 :root {
-    --brand-color: #61ace9;
-    --primary-color: #9aee6a;
-    --secondary-color: #f02ad5;
-    --text-color: #fff;
-/*colors chosen for color scheme to pull from an use thru-out document*/
+    --bg-color: #121b13;
+    --primary-color: #2f4731;
+    --secondary-color: #3d1419;
+    --third-color: #9a3f4a;
+    --text-color: #bd6809;
+    --header-font: 'Times New Roman';
+    --body-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/*chosen variables for theme to pull from an use thru-out document*/
 } 
-
+* {
+    box-sizing: border-box;
+}
 body {
-    background-color:#000;
-
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    margin: 0 auto;
 }
+
 header {
-    color: var(--brand-color);
-    font-size: 80px;
-    font-family: 'Times New Roman';
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 50px;
+    font-family: var(--header-font);
+    font-weight: bold;
+    text-shadow: 5px 5px var(--third-color);
     text-align: center;
-    padding: 5px 5px 25px 5px;
-    border: 10px dashed var(--primary-color);
+    padding: 25px;
 
 }
 
-
+main {
+    width: 80%;
+    height: auto;
+    margin: 1% auto;
+}
 
 .column-card {
+    background-color: var(--secondary-color);
+    border: 5px dotted var(--third-color);
+    border-radius: 8px;    /* Rounded corners */
     display: inline-block;
+    vertical-align: top;
     width: 40%;
-    border: 5px dotted var(--secondary-color);
-    border-radius: 8px; /* Rounded corners */
     padding: 10px;
-    margin: 3%;
-    box-sizing: border-box;
-    background-color: #f02ad65b;
-    
+    margin: 1%;
 }
 .tooltip {
     position: relative;
@@ -54,21 +67,23 @@ header {
     opacity: 0;
     transition: opacity 0.3s;
 } /* This targets the .tooltiptext element ONLY when it is nested inside an element with the .tooltip class */
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 } /* This targets the nested .tooltiptext child element ONLY when the parent .tooltip element is hovered over */
 
 aside {
-    background-color: #333;
-    padding: auto;
+    background-color: var(--third-color);
     color: var(--text-color);
-    text-align:left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+    text-align:center;
 }
 
 footer {
-    background-color:#33333362;
-    padding: 10px 10px 25px 15px;
-    border: 5px inset var(--brand-color);
+    background-color: var(--secondary-color);
+    padding: 25px;
     text-align: center;
 }
