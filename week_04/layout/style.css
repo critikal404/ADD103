@@ -1,4 +1,4 @@
-:root {
+:root { /*chosen variables for theme to pull from an use thru-out document*/
     --bg-color: #121b13;
     --primary-color: #2f4731;
     --secondary-color: #3d1419;
@@ -6,12 +6,12 @@
     --text-color: #bd6809;
     --header-font: 'Times New Roman';
     --body-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-/*chosen variables for theme to pull from an use thru-out document*/
+
 } 
-* {
+* { /*applies to all elements*/
     box-sizing: border-box;
 }
-body {
+body { /**/
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--body-font);
@@ -39,7 +39,7 @@ main {
 .column-card {
     background-color: var(--secondary-color);
     border: 5px dotted var(--third-color);
-    border-radius: 8px;    /* Rounded corners */
+    border-radius: 8px;
     display: inline-block;
     vertical-align: top;
     width: 40%;
@@ -50,7 +50,7 @@ main {
     position: relative;
     display: inline-block;
     border-bottom: 1px dashed black; 
-    cursor: help;
+    cursor:pointer;
 }
 .tooltip .tooltiptext {
     visibility: hidden;
