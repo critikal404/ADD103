@@ -1,40 +1,54 @@
 :root {
     --bg-color: #C8A03E;
-    --main-color: #0C2E06;
+    --main-color: #5a5a5aaf;
     --second-color: #5C8611;
     --accent1: #9EC532;
     --accent2: #7DAB9E;
 }
 
-* {box-sizing: border-box;
-   margin: 0;
-   padding: 0;  }
+* {box-sizing: border-box;} 
 
+/*style items*/
 body {
-    background-color: var(--second-color);
+    background-color: #fff;
+    background-image: url("../../../ADD103/week_05/images/bg_01.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 h1 {
     color: var(--accent2);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 80px;
+    text-align: center;
 }
 
 h2, p {
-
+    padding: 20px;
 }
 
+h3 {
+    padding: 50px;
+}
+
+/*"HERO" element as "Banner"*/
 .banner {
     display: flex;
     align-items: center;
     background-color: var(--main-color);
+    width: 1000px;
+    margin: 0 auto;
 }
 
 .banner-text {
     flex-basis: 50%;
-    padding: 25px;
 }
 
 .banner-img {
     flex-basis: 50%;
+    flex-grow: 1;
 
 }
 
@@ -43,12 +57,32 @@ h2, p {
     display: block;
 }
 
-.left-column {
+/*Main content beneath the Banner divided by left and right columns and a footer
+  flex element on the next line*/
+.main-body {
+    display: flex;
+    flex-wrap: wrap; /*makes the three div containers act appropriately*/
+    width: 1000px;
+    margin: 0 auto;
+    gap: 0px;
+}
 
+.left-column {
+    width: 30%;
+    flex-grow: 0;
+    background-color: #e8f0e9;
 }
 
 .right-column {
+    width: 70%;
+    background: white;
+    flex-grow: 1; 
+}
 
+.footer {
+    background-color: #5b86116c;
+    flex-basis: 100%;
+    text-align: center;
 }
 
 footer {
