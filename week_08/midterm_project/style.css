@@ -1,0 +1,57 @@
+:root {
+    --bg-color: #000;
+    --main-color: #fff;
+    --accent-color: #666;
+}
+
+* {box-sizing: border-box;}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    background-color: var(--main-color);
+}
+
+.banner {
+    grid-column: span 4;
+    text-align: center;
+    height: 300px;
+    background-color: var(--accent-color);
+
+}
+
+.nav {
+    grid-column: span 1;
+    padding: 30px;
+}
+
+.content {
+    grid-column: span 3;
+
+}
+
+.footer {
+    grid-column: span 4;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+@media 
+
+
